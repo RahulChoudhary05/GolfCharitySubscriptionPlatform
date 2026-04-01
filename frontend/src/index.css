@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Archivo+Black&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    @apply text-creem-dark bg-creem-bg;
+    font-family: "Sora", system-ui, -apple-system, sans-serif;
+    background-image:
+      radial-gradient(circle at 20% 20%, rgba(31, 138, 138, 0.12), transparent 40%),
+      radial-gradient(circle at 80% 0%, rgba(242, 159, 103, 0.18), transparent 35%),
+      linear-gradient(180deg, #fcfaf7 0%, #f3eee6 100%);
+    min-height: 100vh;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "Archivo Black", "Sora", sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer components {
+  .neo-card {
+    @apply rounded-3xl border-2 border-creem-dark/90 bg-creem-white shadow-brutal p-6;
+  }
+
+  .btn-primary {
+    @apply rounded-2xl border-2 border-creem-dark bg-creem-primary px-6 py-3 font-semibold text-creem-white shadow-brutal transition-all hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-brutal-sm active:translate-y-[4px] active:translate-x-[4px] active:shadow-brutal-active;
+  }
+
+  .btn-secondary {
+    @apply rounded-2xl border-2 border-creem-dark bg-creem-secondary px-6 py-3 font-semibold text-creem-dark shadow-brutal transition-all hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-brutal-sm active:translate-y-[4px] active:translate-x-[4px] active:shadow-brutal-active;
+  }
+  
+  .btn-accent {
+    @apply rounded-2xl border-2 border-creem-dark bg-creem-accent px-6 py-3 font-semibold text-creem-dark shadow-brutal transition-all hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-brutal-sm active:translate-y-[4px] active:translate-x-[4px] active:shadow-brutal-active;
+  }
+
+  .input-neo {
+    @apply w-full rounded-2xl border-2 border-creem-dark/80 bg-creem-white px-4 py-3 outline-none transition-all focus:border-creem-primary focus:shadow-brutal-sm focus:ring-2 focus:ring-creem-primary/20;
+  }
+
+  .neo-badge {
+    @apply rounded-full border-2 border-creem-dark bg-creem-accent px-3 py-1 text-sm font-semibold text-creem-dark shadow-brutal-sm;
+  }
+
+  .shell-grid {
+    @apply relative;
+    background-image: linear-gradient(rgba(39, 65, 86, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(39, 65, 86, 0.08) 1px, transparent 1px);
+    background-size: 34px 34px;
+  }
+}
