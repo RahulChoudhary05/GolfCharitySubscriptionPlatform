@@ -116,7 +116,7 @@ Health check URL after deploy:
 - Build command: npm run build
 - Output directory: dist
 - Add env variable:
-	- VITE_API_URL=https://your-render-service.onrender.com/api
+    - VITE_API_URL=https://golfcharitysubscriptionplatform.onrender.com/api
 
 Note: frontend/vercel.json already includes SPA route rewrite to index.html.
 

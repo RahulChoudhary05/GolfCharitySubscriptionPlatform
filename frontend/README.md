@@ -22,7 +22,7 @@ VITE_API_URL=http://localhost:5000/api
 For production on Vercel:
 
 ```env
-VITE_API_URL=https://your-render-service.onrender.com/api
+VITE_API_URL=https://golfcharitysubscriptionplatform.onrender.com/api
 ```
 
 ## Deployment Notes
