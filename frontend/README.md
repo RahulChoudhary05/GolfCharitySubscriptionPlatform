@@ -2,6 +2,10 @@
 
 React + Vite client for authentication, subscriptions, score entry, draw results, and admin dashboard views.
 
+Live frontend URL:
+
+- https://golfcharitysubscriptionplatform-gray.vercel.app/
+
 ## Commands
 
 ```bash

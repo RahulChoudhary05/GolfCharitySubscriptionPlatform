@@ -12,6 +12,11 @@ This repository is designed for showcase and evaluator review: it includes seede
 - Auth: JWT with role-based route guards
 - Payments: Mock mode and Stripe test mode
 
+## Live Deployment Links
+
+- Frontend: https://golfcharitysubscriptionplatform-gray.vercel.app/
+- Backend API: https://golfcharitysubscriptionplatform.onrender.com
+
 ## Core Features
 
 - Secure authentication and role-based authorization (user/admin)
@@ -78,7 +83,7 @@ npm run dev
 - STRIPE_SECRET_KEY=sk_test_xxx
 - PAYMENT_MODE=mock or stripe
 - DEMO_MODE=true or false
-- FRONTEND_URL=http://localhost:5173
+- FRONTEND_URL=https://golfcharitysubscriptionplatform-gray.vercel.app
 
 ### Frontend (frontend/.env)
 
